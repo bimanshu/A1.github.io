@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+    #butcontainer{
+        display: flex;
+        justify-content: center;
+
+    }
+#butcontainer button{
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+</style>
+<body class="website" id="bdy">
+   <h1 class= "website" id="heading1">Upendra's class</h1> 
+   <p class= "website" id= "para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vitae nesciunt blanditiis minus, 
+    quaerat consequuntur nihil enim, reprehenderit est ad esse voluptates tempore.</p>
+   
+
+    <div id="butcontainer"><button onclick="changecolor()"> Darkmode</button>
+    <button onclick="changelight()"> Lightmode </button>
+   </div>
+
+    <script>
+
+       let darkmode= document.getElementById("bdy");
+
+        function changecolor(){
+            darkmode.style.backgroundColor="black";
+            darkmode.style.color="white";
+        }
+
+        function changelight(){
+            darkmode.style.backgroundColor="white";
+            darkmode.style.color="black";
+        }
+
+
+            
+    
+    </script>
+ 
+</body>
+</html>
